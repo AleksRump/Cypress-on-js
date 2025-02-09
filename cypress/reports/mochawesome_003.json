@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-22T23:14:30.622Z",
+    "end": "2024-08-22T23:14:51.888Z",
+    "duration": 21266,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "324ac377-b65c-4f57-b431-d7eaa2a3a098",
+      "title": "",
+      "fullFile": "cypress\\e2e\\portnovLoginnewQuieze.cy.js",
+      "file": "cypress\\e2e\\portnovLoginnewQuieze.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0af42ddf-694f-4a17-98bf-38bd2b746405",
+          "title": "Login- create quieze- delet quieze-Logout",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "28ac1e0f-995b-49ca-ac09-7cab7e8f84af",
+              "title": "Login - Create Quieze - Delete Quieze - Logout",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "create/delete quieze",
+                  "fullTitle": "Login- create quieze- delet quieze-Logout Login - Create Quieze - Delete Quieze - Logout create/delete quieze",
+                  "timedOut": null,
+                  "duration": 15427,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "quieeze.quieezPage();\nquieeze.createQuieeze();\nquieeze.EnternameQuieeeze('AAAAA');\nquieeze.addQuiestion();\nquieeze.quiestionType();\nquieeze.enterFirstQuiestion('1 Quiestion');\nquieeze.saveQuieeze();\nquieeze.deleteQuieeze();",
+                  "err": {},
+                  "uuid": "1f5d8b4b-82ba-48a4-8fcc-d0c0861476fd",
+                  "parentUUID": "28ac1e0f-995b-49ca-ac09-7cab7e8f84af",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "1f5d8b4b-82ba-48a4-8fcc-d0c0861476fd"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 15427,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

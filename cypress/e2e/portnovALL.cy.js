@@ -1,0 +1,43 @@
+it('PortnovWEB', () => {
+    cy.visit('http://ask-int.portnov.com/#/login')
+    cy.get('#mat-input-0').type('teacherBP1@gmail.com')
+    cy.get('#mat-input-1').type('12345')
+    cy.get('.mat-raised-button > .mat-button-wrapper').click()
+    //cy.wait(3000)
+
+    cy.get('[href="/#/quizzes"] > .mat-list-item-content > .mat-list-text > .mat-line').click()
+    cy.get('.controls > a > .mat-raised-button > .mat-button-wrapper').click()
+    cy.get('#mat-input-2').type('AAAAAAA')
+    cy.get('.mat-button-wrapper > .mat-icon').click()
+    cy.get('#mat-radio-2 > .mat-radio-label > .mat-radio-label-content').click()
+    cy.get('#mat-input-3').type('1 quiestion')
+    cy.get('.mat-button-wrapper > .mat-icon').click()
+    cy.get('#mat-radio-7 > .mat-radio-label > .mat-radio-label-content').click()
+    cy.get('#mat-input-4').type('Quiestion 2')
+    cy.get('#mat-input-5').type('abra cadabra')
+    cy.get('#mat-input-6').type('avada kedavra')
+    cy.get('#mat-radio-10').click()
+    cy.get('.mat-button > .mat-button-wrapper > .mat-icon').click()
+    cy.get('#mat-radio-16 > .mat-radio-label > .mat-radio-label-content').click()
+    cy.get('#mat-input-7').type('Quiestion 3')
+    cy.get('#mat-input-8').type('ABVGDE')
+    cy.get('#mat-input-9').type('BGFRR')
+    cy.get('.ng-invalid > .right > .options > .add-option > .mat-raised-button').click()
+    cy.get('#mat-input-10').type('CCCFFFG')
+    cy.get('#mat-checkbox-5 > .mat-checkbox-layout > .mat-checkbox-inner-container').click()
+    cy.get('#mat-checkbox-7 > .mat-checkbox-layout > .mat-checkbox-inner-container').click()
+    cy.get('.form-controls > .controls > :nth-child(2) > .mat-button-wrapper').click()
+    //cy.wait(4000)
+
+    cy.get('#mat-expansion-panel-header-167').click()
+    cy.get('#cdk-accordion-child-167 > .mat-expansion-panel-body > .horizontal-group > .buttons > .mat-warn').click()
+    //cy.wait(1500)
+    cy.get('.mat-dialog-actions > .mat-warn').click()
+    cy.wait(1000)
+
+    cy.get('mat-list-item.mat-list-item > .mat-list-item-content > .mat-list-text > .mat-line').click()
+    cy.get('.mat-dialog-actions > .mat-warn').click()
+
+    cy.title().should('match', /^Assessment Control/)  //искать какой вариант подходит впервый раз eq не подошёл include не стал пробовать
+
+})

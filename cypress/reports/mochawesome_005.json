@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-22T23:15:09.525Z",
+    "end": "2024-08-22T23:15:17.359Z",
+    "duration": 7834,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ae66a174-7517-4b37-aec3-d3f2e1ac474b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\portwithPOtest2.cy.js",
+      "file": "cypress\\e2e\\portwithPOtest2.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "PortnovLogin2",
+          "fullTitle": "PortnovLogin2",
+          "timedOut": null,
+          "duration": 4240,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "Login.login(); // login для связи с page object и выполнения действий в нём",
+          "err": {},
+          "uuid": "8804a91d-9d03-46a2-b636-28c7538c4690",
+          "parentUUID": "ae66a174-7517-4b37-aec3-d3f2e1ac474b",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "8804a91d-9d03-46a2-b636-28c7538c4690"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 4240,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

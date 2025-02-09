@@ -1,0 +1,91 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-08-22T23:15:55.276Z",
+    "end": "2024-08-22T23:16:30.813Z",
+    "duration": 35537,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fa5f3481-1a2b-4385-961d-123882aa0b43",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test1.cy.js",
+      "file": "cypress\\e2e\\test1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Google Search",
+          "fullTitle": "Google Search",
+          "timedOut": null,
+          "duration": 30291,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://google.com');\ncy.get('#APjFqb').type('cucamber{Enter}'); // 'cucamber{Enter}' этот enter позволяет просто нажать enter, без доаолнительной строки\n//cy.contains('Buscar con Google'). click()\ncy.get('#dimg_11').click(); //кликеуть по картинке\ncy.wait(2000);\ncy.get('[style=\"background-color: rgb(32, 33, 36); transform: scale(1.1, 0.9); font-family: monospace; font-size: 26px; width: 52px; height: 52px; color: rgb(232, 234, 237); display: flex; justify-content: center; align-items: center; position: fixed; top: 0px; right: 8px; z-index: 1121;\"]', {\n  timeout: 5000\n}).click();\n//это нажмёт крестик и таймаут увеличен",
+          "err": {
+            "message": "CypressError: Timed out retrying after 5000ms: The command was expected to run against origin `https://www.google.com` but the application is at origin `https://www.amazon.com`.\n\nThis commonly happens when you have either not navigated to the expected origin or have navigated away unexpectedly.\n\nUsing `cy.origin()` to wrap the commands run on `https://www.amazon.com` will likely fix this issue.\n\n`cy.origin('https://www.amazon.com', () => {`\n`  <commands targeting https://www.amazon.com go here>`\n`})`\n\nhttps://on.cypress.io/cy-visit-succeeded-but-commands-fail",
+            "estack": "CypressError: Timed out retrying after 5000ms: The command was expected to run against origin `https://www.google.com` but the application is at origin `https://www.amazon.com`.\n\nThis commonly happens when you have either not navigated to the expected origin or have navigated away unexpectedly.\n\nUsing `cy.origin()` to wrap the commands run on `https://www.amazon.com` will likely fix this issue.\n\n`cy.origin('https://www.amazon.com', () => {`\n`  <commands targeting https://www.amazon.com go here>`\n`})`\n\nhttps://on.cypress.io/cy-visit-succeeded-but-commands-fail\n    at cypressErr (https://www.google.com/__cypress/runner/cypress_runner.js:76024:18)\n    at Object.errByPath (https://www.google.com/__cypress/runner/cypress_runner.js:76078:10)\n    at Object.commandCanCommunicateWithAUT (https://www.google.com/__cypress/runner/cypress_runner.js:145372:90)\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:132279:22)\n    at Object.subjectFn (https://www.google.com/__cypress/runner/cypress_runner.js:144177:16)\n    at $Cy.verifyUpcomingAssertions (https://www.google.com/__cypress/runner/cypress_runner.js:143516:31)\n    at onRetry (https://www.google.com/__cypress/runner/cypress_runner.js:144168:15)\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise.attempt.Promise.try (https://www.google.com/__cypress/runner/cypress_runner.js:4315:29)\n    at whenStable (https://www.google.com/__cypress/runner/cypress_runner.js:144055:68)\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:143996:14)\n    at tryCatcher (https://www.google.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://www.google.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://www.google.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://www.google.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://www.google.com/__cypress/runner/cypress_runner.js:1701:18)\n    at Promise._fulfill (https://www.google.com/__cypress/runner/cypress_runner.js:1645:18)\n    at <unknown> (https://www.google.com/__cypress/runner/cypress_runner.js:5450:46)\nFrom Your Spec Code:\n    at Context.eval (webpack://project1/./cypress/e2e/test1.cy.js:10:7)",
+            "diff": null
+          },
+          "uuid": "0c07fa0f-abfc-4716-8b3f-7d52b24ad657",
+          "parentUUID": "fa5f3481-1a2b-4385-961d-123882aa0b43",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "0c07fa0f-abfc-4716-8b3f-7d52b24ad657"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 30291,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

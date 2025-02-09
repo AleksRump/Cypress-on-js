@@ -1,0 +1,31 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "rimraf ./cypress/reports/report1.html && rimraf ./cypress/reports/*.json && rimraf ./cypress/report1.json || npm run test",
+    "test": "cypress run || npm run posttest",
+    "posttest": "npm run merge-reports && npm run generate-htmlreport",
+    "merge-reports": "mochawesome-merge cypress/reports/*.json > ./report1.json",
+    "generate-htmlreport": "marge ./report1.json --reportDir ./cypress/reports",
+    "hello": "echo Hello World",
+    "cy-tests": "cypress run",
+    "sayhello": "echo Hello world...!"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^13.13.2",
+    "cypress-downloadfile": "^1.2.4",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "project1": "file:",
+    "rimraf": "^6.0.1"
+  },
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8",
+    "mochawesome": "^7.1.3"
+  }
+}

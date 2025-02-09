@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-22T23:13:58.072Z",
+    "end": "2024-08-22T23:14:24.595Z",
+    "duration": 26523,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4d341872-4009-4633-b68c-cbad56249f85",
+      "title": "",
+      "fullFile": "cypress\\e2e\\portnovALL.cy.js",
+      "file": "cypress\\e2e\\portnovALL.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "PortnovWEB",
+          "fullTitle": "PortnovWEB",
+          "timedOut": null,
+          "duration": 21293,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('http://ask-int.portnov.com/#/login');\ncy.get('#mat-input-0').type('teacherBP1@gmail.com');\ncy.get('#mat-input-1').type('12345');\ncy.get('.mat-raised-button > .mat-button-wrapper').click();\n//cy.wait(3000)\ncy.get('[href=\"/#/quizzes\"] > .mat-list-item-content > .mat-list-text > .mat-line').click();\ncy.get('.controls > a > .mat-raised-button > .mat-button-wrapper').click();\ncy.get('#mat-input-2').type('AAAAAAA');\ncy.get('.mat-button-wrapper > .mat-icon').click();\ncy.get('#mat-radio-2 > .mat-radio-label > .mat-radio-label-content').click();\ncy.get('#mat-input-3').type('1 quiestion');\ncy.get('.mat-button-wrapper > .mat-icon').click();\ncy.get('#mat-radio-7 > .mat-radio-label > .mat-radio-label-content').click();\ncy.get('#mat-input-4').type('Quiestion 2');\ncy.get('#mat-input-5').type('abra cadabra');\ncy.get('#mat-input-6').type('avada kedavra');\ncy.get('#mat-radio-10').click();\ncy.get('.mat-button > .mat-button-wrapper > .mat-icon').click();\ncy.get('#mat-radio-16 > .mat-radio-label > .mat-radio-label-content').click();\ncy.get('#mat-input-7').type('Quiestion 3');\ncy.get('#mat-input-8').type('ABVGDE');\ncy.get('#mat-input-9').type('BGFRR');\ncy.get('.ng-invalid > .right > .options > .add-option > .mat-raised-button').click();\ncy.get('#mat-input-10').type('CCCFFFG');\ncy.get('#mat-checkbox-5 > .mat-checkbox-layout > .mat-checkbox-inner-container').click();\ncy.get('#mat-checkbox-7 > .mat-checkbox-layout > .mat-checkbox-inner-container').click();\ncy.get('.form-controls > .controls > :nth-child(2) > .mat-button-wrapper').click();\n//cy.wait(4000)\ncy.get('#mat-expansion-panel-header-167').click();\ncy.get('#cdk-accordion-child-167 > .mat-expansion-panel-body > .horizontal-group > .buttons > .mat-warn').click();\n//cy.wait(1500)\ncy.get('.mat-dialog-actions > .mat-warn').click();\ncy.wait(1000);\ncy.get('mat-list-item.mat-list-item > .mat-list-item-content > .mat-list-text > .mat-line').click();\ncy.get('.mat-dialog-actions > .mat-warn').click();\ncy.title().should('match', /^Assessment Control/); //искать какой вариант подходит впервый раз eq не подошёл include не стал пробовать",
+          "err": {},
+          "uuid": "f6d0f46c-1cb5-479e-97da-d55edda2ea5e",
+          "parentUUID": "4d341872-4009-4633-b68c-cbad56249f85",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "f6d0f46c-1cb5-479e-97da-d55edda2ea5e"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 21293,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
