@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 const { downloadFile } = require('cypress-downloadfile/lib/addPlugin');
 
+
 module.exports = defineConfig({
   e2e: {
     // module.exports = {  // хз надо искать почему не пишет видео при запуске через run
